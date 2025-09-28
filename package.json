@@ -1,0 +1,29 @@
+{
+  "name": "pixel-edit",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc && tsc -p tsconfig.renderer.json && mkdir -p dist/renderer && cp src/renderer/index.html dist/renderer/",
+    "start": "npm run build && electron .",
+    "dev": "tsc -w",
+    "dist": "electron-builder"
+  },
+  "main": "dist/main/main.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "electron": "^38.2.0"
+  },
+  "devDependencies": {
+    "@types/electron": "^1.4.38",
+    "@types/node": "^24.5.2",
+    "@typescript-eslint/eslint-plugin": "^8.44.1",
+    "@typescript-eslint/parser": "^8.44.1",
+    "electron-builder": "^26.0.12",
+    "ts-loader": "^9.5.4",
+    "typescript": "^5.9.2",
+    "webpack": "^5.101.3",
+    "webpack-cli": "^6.0.1"
+  }
+}
